@@ -1,0 +1,14 @@
+digraph G {
+    rankdir=LR;
+    node [shape=box];
+    a -> b [label="3"];
+    b -> c [label="1"];
+    b -> d [label="2"];
+    d -> e [label="1"];
+    d -> g [label="1"];
+    e -> f [label="2"];
+    f -> g [label="1"];
+    f -> h [label="1"];
+    g -> e [label="1"];
+    g -> h [label="1"];
+}
