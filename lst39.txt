@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xes.version="1.0" ... xmlns="http://www.xes-standard.org/">
+    ...
+    <trace>
+        <date key="REG_DATE" value="2011-10-01T00:38:44.546+02:00"/>
+        <string key="concept:name" value="173688"/>
+        <string key="AMOUNT_REQ" value="20000"/>
+        <event>
+            <string key="org:resource" value="112"/>
+            <string key="lifecycle:transition" value="COMPLETE"/>
+            <string key="concept:name" value="A_SUBMITTED"/>
+            <date key="time:timestamp" value="2011-10-01T00:38:44.546+02:00"/>
+        </event>
+        <event>
+            <string key="org:resource" value="112"/>
+            <string key="lifecycle:transition" value="COMPLETE"/>
+            <string key="concept:name" value="A_PARTLYSUBMITTED"/>
+            <date key="time:timestamp" value="2011-10-01T00:38:44.880+02:00"/>
+        </event>
+        <event>
+            <string key="org:resource" value="112"/>
+            <string key="lifecycle:transition" value="COMPLETE"/>
+            <string key="concept:name" value="A_PREACCEPTED"/>
+            <date key="time:timestamp" value="2011-10-01T00:39:37.906+02:00"/>
+        </event>
+        ...
+    </trace>
+    ...
+</log>
