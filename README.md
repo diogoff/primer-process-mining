@@ -2,7 +2,9 @@
 
 This repository contains the source code for the book [A Primer on Process Mining: Practical Skills with Python and Graphviz](https://www.springer.com/gp/book/9783319564265).
 
-Most of the examples are based on the small log file `eventlog.csv`. Some figures are based on the larger log file `eventlog_large.csv`.
+Most examples are based on the small log file `eventlog.csv`. Some figures and results have been generated using the larger log file `eventlog_large.csv`.
+
+In Chapter 5, we use a log file that is referred to as `financial_log.xes`.
 
 
 
