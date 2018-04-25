@@ -1,7 +1,7 @@
 import datetime
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('financial_log.xes') # https://data.4tu.nl/repository/uuid:3926db30-f712-4394-aebc-75976070e91f
+tree = ET.parse('financial_log.xes')
 root = tree.getroot()
 
 ns = {'xes': 'http://www.xes-standard.org/'}
