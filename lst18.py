@@ -1,4 +1,41 @@
-from lst16 import *
+f = open('eventlog_large.csv', 'r')
+
+log = dict()
+
+for line in f:
+    line = line.strip()
+    if len(line) == 0:
+        continue
+    parts = line.split(';')
+    caseid = parts[0]
+    task = parts[1]
+    user = parts[2]
+    timestamp = parts[3]
+    if caseid not in log:
+        log[caseid] = []
+    event = (task, user, timestamp)
+    log[caseid].append(event)
+
+f.close()
+
+F = dict()
+for caseid in log:
+    for i in range(0, len(log[caseid])-1):
+        ai = log[caseid][i][0]
+        if ai not in F:
+            F[ai] = dict()
+        aj = log[caseid][i+1][0]
+        if aj not in F[ai]:
+            F[ai][aj] = 0
+        F[ai][aj] += 1
+
+A = dict()
+for caseid in log:
+    for i in range(0, len(log[caseid])):
+        ai = log[caseid][i][0]
+        if ai not in A:
+            A[ai] = 0
+        A[ai] += 1
 
 import pygraphviz as pgv
 

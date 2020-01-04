@@ -25,7 +25,7 @@ fig, ax = plt.subplots(nrows, ncols)
 i = 0
 j = 0
 for a in sorted(D.keys()):
-    print '%s: mean=%.2f std=%.2f days' % (a, np.mean(D[a]), np.std(D[a]))
+    print('%s: mean=%.2f std=%.2f days' % (a, np.mean(D[a]), np.std(D[a])))
     ax[i,j].hist(D[a], bins=[0.1*k for k in range(100)])
     ax[i,j].set_title(a)
     ax[i,j].set_xticks(range(10))

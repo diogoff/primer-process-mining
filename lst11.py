@@ -13,4 +13,4 @@ for caseid in log:
 
 for ai in sorted(F.keys()):
     for aj in sorted(F[ai].keys()):
-        print ai, '->', aj, ':', F[ai][aj]
+        print(ai, '->', aj, ':', F[ai][aj])

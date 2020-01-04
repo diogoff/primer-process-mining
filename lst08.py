@@ -20,4 +20,4 @@ f.close()
 
 for caseid in log:
     for (task, user, timestamp) in log[caseid]:
-        print caseid, task, user, timestamp
+        print(caseid, task, user, timestamp)

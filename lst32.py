@@ -18,4 +18,4 @@ for ai in sorted(D.keys()):
         avg_td = sum_td/count_td
         avg_td -= datetime.timedelta(microseconds=avg_td.microseconds)
         D[ai][aj] = avg_td
-        print ai, '->', aj, ':', D[ai][aj]
+        print(ai, '->', aj, ':', D[ai][aj])

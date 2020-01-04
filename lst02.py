@@ -17,4 +17,4 @@ for line in f:
 f.close()
 
 for (caseid, task, user, timestamp) in log:
-    print caseid, task, user, timestamp
+    print(caseid, task, user, timestamp)

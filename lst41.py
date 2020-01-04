@@ -27,5 +27,5 @@ for trace in root.findall('xes:trace', ns):
             if date.attrib['key'] == 'time:timestamp':
                 timestamp = date.attrib['value']
                 timestamp = datetime.datetime.strptime(timestamp[:-10],
-                                                       '%Y-%m-%dT%H:%M:%S')
-        print ';'.join([caseid, task, event_type, user, str(timestamp)])
+                                                                    '%Y-%m-%dT%H:%M:%S')
+        print(';'.join([caseid, task, event_type, user, str(timestamp)]))

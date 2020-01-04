@@ -19,4 +19,4 @@ for caseid in log:
 
 for ui in sorted(W.keys()):
     for uj in sorted(W[ui].keys()):
-        print ui, '--', uj, ':', W[ui][uj]
+        print(ui, '--', uj, ':', W[ui][uj])
